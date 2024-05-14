@@ -61,7 +61,6 @@ table {
 * {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -92,13 +91,13 @@ table {
 }
 
 .banner {
-  padding: 15px 0;
+  padding: 20px 0;
   background: var(--primary-color);
 }
 .banner .left {
   background: var(--primary-color);
   background: transparent;
-  padding: 10px;
+  padding: 20px;
   gap: 100px;
 }
 .banner .left .text {
@@ -164,7 +163,7 @@ table {
 }
 
 #about {
-  margin-top: 250px;
+  margin-top: 10rem;
 }
 #about .about .brief {
   padding-left: 100px;
@@ -175,68 +174,35 @@ table {
   background: var(--bg-color);
 }
 #about .about .GALLERY {
-  padding-left: 100px;
+  padding-left: 40px;
   display: flex;
   flex-direction: row;
+}
+#about .about .GALLERY .hide {
+  display: none;
 }
 #about .about .GALLERY img {
   width: 200px;
   height: 270px;
+  display: block;
 }
 #about .about .GALLERY .pic2 {
   padding-top: 90px;
 }
 #about .about .snap img {
   height: 400px;
-  width: 420px;
+  width: 340px;
 }
-#about .yeu .gap button {
+
+.yeu .gap button {
   background-color: #802280;
   color: white;
   border: none;
 }
 
-#services {
-  padding-top: 100px;
-}
-#services .photos {
-  display: flex;
-  padding: 10px;
-  gap: 10px;
-  justify-content: center;
-}
-#services .photos .eev {
-  position: relative;
-  width: 40%;
-}
-#services .photos .eev img {
-  width: 100%;
-  -o-object-position: top;
-     object-position: top;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#services .photos .eev .cee {
-  position: absolute;
-  top: 5px;
-  background: purple;
-  align-items: center;
-}
-#services .photos .eev .cee p {
-  align-items: baseline;
-  text-align: center;
-  color: aqua;
-}
-#services .photos .purpleshot img {
-  width: 107%;
-}
-#services .photos .lastimage img {
-  width: 100%;
-  height: 100%;
-  -o-object-position: top;
-     object-position: top;
-  -o-object-fit: cover;
-     object-fit: cover;
+#services .container .row img {
+  width: 300px;
+  height: 70%;
 }
 
 #BUYERS {
@@ -246,12 +212,10 @@ table {
   padding-left: 70px;
 }
 #BUYERS .container .row .Farie img {
-  width: 340px;
-  height: 300px;
+  height: 12rem;
 }
 #BUYERS .container .row .miemie img {
-  width: 470px;
-  height: 350px;
+  height: 12rem;
 }
 
 #socials {
@@ -287,78 +251,65 @@ table {
 #socials .socials-btn button:hover a {
   color: white;
 }
+#socials .hide {
+  display: none;
+}
 
-#FOOTER {
-  width: 100vw;
-  font-family: "josefinregular";
-  background-color: #742296;
-  width: 100vw;
-  height: 32vh;
-  color: black;
+#footer {
+  padding: 1rem 0;
+  background: #80228C;
 }
-#FOOTER h4 {
-  font-family: "josefinsemibold";
-  font-size: 24px;
+#footer .container .p {
+  font-weight: 700;
+  color: white;
   text-decoration: underline;
-  margin-bottom: 2vh;
-  cursor: pointer;
-  background-color: #742296;
 }
-#FOOTER p {
-  cursor: pointer;
-  background-color: #742296;
+#footer .container .links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
-#FOOTER img {
-  cursor: pointer;
-  background-color: white;
+#footer .container .links a {
+  text-decoration: none;
+  color: white;
 }
-#FOOTER .row-one {
-  margin-top: 4vh;
-  background-color: #742296;
+#footer .container .top {
+  padding-bottom: 2rem;
+  background: #80228C;
 }
-#FOOTER .row-one p {
-  font-size: 18px;
-  margin-bottom: 2vh;
-  background-color: #742296;
+#footer .container .top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-#FOOTER .row-one p .span-one {
-  font-size: 28px;
-  background-color: #742296;
+#footer .container .top .left .logo {
+  height: 2rem;
+  width: 5rem;
 }
-#FOOTER .row-one p .span-two {
-  margin-left: 25px;
-  background-color: #742296;
+#footer .container .top .left .words p {
+  color: white;
 }
-#FOOTER .row-two {
-  margin-top: 4vh;
-  background-color: #742296;
+#footer .container .top .left .words img {
+  height: 1rem;
 }
-#FOOTER .row-two p {
-  font-size: 20px;
-  line-height: 40px;
-  background-color: #742296;
+#footer .container .top .left .profiles {
+  display: flex;
+  gap: 7px;
 }
-#FOOTER .row-three {
-  margin-top: 4vh;
-  background-color: #742296;
+#footer .container .top .left .profiles img {
+  height: 2rem;
 }
-#FOOTER .row-three p {
-  font-size: 20px;
-  line-height: 40px;
-  background-color: #742296;
+#footer .container .below .right .get-in-touch .detail {
+  display: flex;
+  gap: 7px;
+  align-items: center;
 }
-#FOOTER .row-four {
-  margin-top: 4vh;
-  background-color: #742296;
+#footer .container .below .right .get-in-touch .detail img {
+  height: 25px;
 }
-#FOOTER .row-four p {
-  font-size: 20px;
-  line-height: 40px;
-  background-color: #742296;
-}
-#FOOTER .row-four h4 {
-  margin-bottom: 10vh;
-  background-color: #742296;
+#footer .container .below .right .get-in-touch .detail p {
+  color: white;
+  padding-top: 14px;
 }
 
 /*
@@ -413,7 +364,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     width: 50px;
     height: 50px;
   }
-  .banner .left .link .text {
+  .pc-nav .flex-container .GALLERY img {
+    display: block;
+  }
+  .banner .left .link .text1 {
     display: flex;
     align-items: center;
   }
@@ -426,6 +380,73 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .banner .right .image1 {
     margin-top: 7vh;
+  }
+  #socials {
+    width: 100vw;
+    color: var(--text-color);
+    background: var(--bg-color);
+    font-family: "josefinsemibold";
+    margin-top: 10vh;
+  }
+  #socials h2 {
+    font-size: 28px;
+  }
+  #socials h2 span {
+    font-family: "greatvibes";
+    font-size: 36px;
+  }
+  #socials p {
+    font-size: 24px;
+  }
+  #socials .socials-btn a {
+    color: black;
+    text-decoration: none;
+    font-size: 21px;
+  }
+  #socials .socials-btn button {
+    border: 3px solid #742296;
+    padding: 8px 20px;
+  }
+  #socials .socials-btn button:hover {
+    background-color: #742296;
+    transition: 300ms ease-in-out;
+  }
+  #socials .socials-btn button:hover a {
+    color: white;
+  }
+  #socials .hide {
+    display: block;
+  }
+  #about {
+    margin-top: 10rem;
+  }
+  #about .about .brief {
+    padding-left: 100px;
+    width: 34rem;
+    font-family: "josefinregular";
+    margin-top: 20vh;
+    color: var(--text-color);
+    background: var(--bg-color);
+  }
+  #about .about .GALLERY {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+  }
+  #about .about .GALLERY .hide {
+    display: block;
+  }
+  #about .about .GALLERY img {
+    width: 200px;
+    height: 270px;
+    display: block;
+  }
+  #about .about .GALLERY .pic2 {
+    padding-top: 90px;
+  }
+  #about .about .snap img {
+    height: 400px;
+    width: 420px;
   }
 }
 /* Large devices (desktops, 992px and up) */

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <title>TIGZOZO MEDIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.google.com/specimen/Josefin+Sans?query=jose" rel="stylesheet">
 </head>
 <body>
     
@@ -91,12 +94,12 @@
                         </div>
                         <div class="GALLERY">
                             <div class="pic1">
-                                <img src="./image/Rectangle 16.png" alt="">
+                                <img src="./image/Rectangle 16.png" alt="" class="hide"> 
         
         
                             </div>
                             <div class="pic2">
-                                <img src="./image/Rectangle 17.png" alt="">
+                                <img src="./image/Rectangle 17.png" alt="" class="hide">
         
                             </div>
         
@@ -108,6 +111,7 @@
                 <div class="col-md-6 right">
                     <div class="snap">
                         <img src="./image/Rectangle 27.png" alt="">
+
         
                     </div>
                     <div class="yeu">
@@ -119,7 +123,7 @@
                                 business community establish their voice and
                                 evaluation.Our work is reonwned for it’s hilghy
                                 crafted design, creativity and its ability to drive
-                                actio</p>
+                                action</p>
                                 <button>Find out more</button>
         
                         </div>
@@ -140,8 +144,8 @@
         
         <div class="container">
             <h3>Services we offer at Tigzozo media</h3>
-            <div class="photos">
-                <div class="eev">
+            <div class="row photos">
+                <div class="col-md-4 eev">
                     <img src="./image/Rectangle 27.png" alt="">
                     <div class="cee">
                         <p>Events</p>
@@ -149,14 +153,14 @@
                     </div>
 
                 </div>
-                <div class="purpleshot">
+                <div class="col-md-4 purpleshot">
                    <img src="./image/Screen Shot 2022-11-24 at 11.35.23.png" alt="">
             </div>
-            <div class="lastimage">
+            <div class="col-md-4 lastimage">
                 <img src="./image/Rectangle 47.png" alt="">
 
             </div>
-                
+          </div>      
 
     </section>
     <!-- CLIENTS SECTION -->
@@ -229,7 +233,7 @@
             <h2 class="fw-bold mb-5 d-flex justify-content-center">As seen on <span>Instagram</span></h2>
             <div class="d-flex justify-content-center gap-3 mb-5">
                 <div class="img one">
-                    <img src="./image/Rectangle 47.png" width="130px">
+                    <img src="./image/Rectangle 47.png" width="130px" class="hide">
                 </div>
                 <div class="img two pt-5 mt-4">
                     <img src="./image/Rectangle 48.png" width="140px">
@@ -241,10 +245,10 @@
                     <img src="./image/Rectangle 62.png" width="140px">
                 </div>
                 <div class="img five">
-                    <img src="./image/Rectangle 63.png" width="140px">
+                    <img src="./image/Rectangle 63.png" width="140px" class="hide">
                 </div>
                 <div class="img six pt-5 mt-4">
-                    <img src="./image/Rectangle 64.png" width="140px">
+                    <img src="./image/Rectangle 64.png" width="140px" class="hide">
                 </div>
             </div>
             <p class="d-flex justify-content-center mb-4">#tigzozo</p>
@@ -257,62 +261,61 @@
 
 </main>
 
-<!-- footer -->
-    <section id="FOOTER ">
+<section id="footer">
     <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-3 col-md-3">
-                <div class="row-one">
-                    <div class="footer-logo mb-4">
-                        <img src="./image/logo.png" width="120px">
-                    </div>
-                    <div class="copyright mb-4">
-                        <p> <span class="span-one">©</span> Copyright Tigzozo media 2022 <br>
-                            <span class="span-two"> All rights reserved.</span>
-                        </p>
-                    </div>
-                    <div class="icons d-flex gap-4">
-                        <div class="fb">
-                            <img src="./image/Icon awesome-facebook-f.png" width="20px">
+        <div class="row top">
+            <div class="col left">
+                <img src="./image/nav.png" alt="" class="logo">
+                <div class="words">
+                    <p><img src="./image/Icon material-copyright.png" alt="copyright"> Copyright Tigzozo media 2022.</p>
+                    <p>All rights reserved</p>
+                </div>
+                <div class="profiles">
+                    <img src="./image/Icon awesome-facebook-f.png" alt="">
+                    <img src="./image/Icon awesome-instagram.png" alt="">
+                </div>
+            </div>
+            <div class="col right">
+                <p class="p">About us</p>
+                <div class="links">
+                    <a href="#">Our story</a>
+                    <a href="#">Our team</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">COVID-19 update</a>
+                </div>
+            </div>
+        </div>
+        <div class="row below">
+            <div class="col left">
+                <p class="p">Here to help</p>
+                <div class="links">
+                    <a href="#">Contact us</a>
+                    <a href="#">Book a session</a>
+                    <a href="#">Payment</a>
+                </div>
+            </div>
+            <div class="col right">
+                <p class="p">Get in touch</p>
+                <div class="links">
+                    <div class="get-in-touch">
+                        <div class="detail">
+                            <img src="./image/Icon material-call.png" alt="">
+                            <p>  Contact us</p>
                         </div>
-                        <div class="ig">
-                            <img src="./image/Icon awesome-instagram.png" width="35px">
+                        <div class="detail">
+                            <img src="./image/Icon material-email.png" alt="">
+                            <p>  john@tigzozomedia.com</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2 col-md-2">
-                <div class="row-two">
-                    <h4>About us</h4>
-                    <p>Our story</p>
-                    <p>Our team</p>
-                    <p>Testimonials</p>
-                    <p>COVID-19 update</p>
-                </div>
-            </div>
-            <div class="col-3 col-md-2">
-               <div class="row-three">
-                    <h4>Here to help</h4>
-                    <p>Contact us</p>
-                    <p>Book a session</p>
-                    <p>Payment</p>
-                </div>
-            </div>
-            <div class="col-3 col-md-3">
-                <div class="row-four">
-                    <h4>Get in touch</h4>
-                    <div class="location d-flex gap-3">
-                        <div class="location">
+                        <div class="detail">
                             <img src="./image/Icon metro-location.png" alt="">
+                            <p>  132 East street Avondale, Harare</p>
                         </div>
-                        <p>132 East Street Avondale, Harare</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 </body>
 </html>
  
