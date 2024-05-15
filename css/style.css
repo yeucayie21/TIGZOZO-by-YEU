@@ -58,6 +58,11 @@ table {
   --secondary-color: black;
 }
 
+.darkTheme {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -90,26 +95,26 @@ table {
   display: none;
 }
 
-.banner {
+.BANNER {
   padding: 20px 0;
   background: var(--primary-color);
 }
-.banner .left {
+.BANNER .left {
   background: var(--primary-color);
   background: transparent;
   padding: 20px;
   gap: 100px;
 }
-.banner .left .text {
+.BANNER .left .text {
   background: var(--primary-color);
   color: var(--secondary-color);
 }
-.banner .left .buttons {
+.BANNER .left .buttons {
   display: flex;
   gap: 20px;
   margin: 2vh 0;
 }
-.banner .left .buttons .bttn-discover {
+.BANNER .left .buttons .bttn-discover {
   background: rgb(128, 34, 140);
   padding: 5px 20px;
   cursor: pointer;
@@ -118,13 +123,13 @@ table {
   justify-content: center;
   width: 10rem;
 }
-.banner .left .buttons .bttn-discover a {
+.BANNER .left .buttons .bttn-discover a {
   background: none;
   color: var(--primary-color);
   text-decoration: none;
   font-size: 15px;
 }
-.banner .left .buttons .bttn-book {
+.BANNER .left .buttons .bttn-book {
   background: transparent;
   border: 3px solid rgb(128, 34, 140);
   padding: 5px 20px;
@@ -134,31 +139,31 @@ table {
   justify-content: center;
   width: 10rem;
 }
-.banner .left .buttons .bttn-book a {
+.BANNER .left .buttons .bttn-book a {
   background: none;
   color: var(--secondary-color);
   text-decoration: none;
   font-size: 15px;
 }
-.banner .left .link {
+.BANNER .left .link {
   margin: 2vh 0;
 }
-.banner .left .link .text {
+.BANNER .left .link .text {
   background: transparent;
   gap: 10px;
 }
-.banner .left .link .text img {
+.BANNER .left .link .text img {
   width: 25px;
   height: auto;
   background: none;
 }
-.banner .left .link .text p {
+.BANNER .left .link .text p {
   background: none;
 }
-.banner .right {
+.BANNER .right {
   display: flex;
 }
-.banner .right img {
+.BANNER .right img {
   width: 25%;
 }
 
@@ -367,18 +372,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .pc-nav .flex-container .GALLERY img {
     display: block;
   }
-  .banner .left .link .text1 {
+  .BANNER .left .link .text1 {
     display: flex;
     align-items: center;
   }
-  .banner .right {
+  .BANNER .right {
     display: flex;
     gap: 5px;
   }
-  .banner .right img {
+  .BANNER .right img {
     height: 30vh;
   }
-  .banner .right .image1 {
+  .BANNER .right .image1 {
     margin-top: 7vh;
   }
   #socials {
@@ -454,23 +459,23 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .pc-nav .flex-container ul {
     gap: 65px;
   }
-  .banner .left {
+  .BANNER .left {
     height: 70vh;
     align-content: center;
   }
-  .banner .left .link .text {
+  .BANNER .left .link .text {
     display: flex;
     align-items: center;
   }
-  .banner .right {
+  .BANNER .right {
     height: 70vh;
     display: flex;
     gap: 5px;
   }
-  .banner .right img {
+  .BANNER .right img {
     height: 50vh;
   }
-  .banner .right .image1 {
+  .BANNER .right .image1 {
     margin-top: 20vh;
   }
 }

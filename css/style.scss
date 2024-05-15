@@ -53,6 +53,11 @@ table {
 	--secondary-color: black;
 }
 
+.darkTheme{
+	--primary-color: black;
+	--secondary-color: white;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -88,7 +93,7 @@ table {
 	display: none;
 }
 
-.banner{
+.BANNER{
 	padding: 20px 0;
 	background: var(--primary-color);
 	
@@ -512,7 +517,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
     }  
 
-	.banner{
+	.BANNER{
 		.left{
 			.link{
 				.text1{
@@ -640,7 +645,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
     }
 
-	.banner{
+	.BANNER{
 		.left{
 			height: 70vh;
 			align-content: center;
